@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true, // @ts-check 애노테이션과 같음
+        "noImplicitAny": true,
+        "strict": true
+    }
+}
