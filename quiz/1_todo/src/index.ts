@@ -1,3 +1,12 @@
+// type으로 타입 정의하기
+/*
+type Todo {
+    id: number;
+    title: string;
+    done: boolean;
+}
+*/
+
 interface Todo {
     id: number;
     title: string;
@@ -5,6 +14,8 @@ interface Todo {
 }
 
 let todoItems: Todo[];
+// 타입 직접 정의하면,
+// let todoItems: {id: number, title: string, done: boolean}[];
 
 // api
 function fetchTodoItems(): Todo[] {
