@@ -9,7 +9,11 @@ sum(10, 20);
 
 // 함수의 옵셔널 파라미터
 function sumOptionalParameter(a: number, b: number, c?: number) {
-    return a + b + c;
+    if (c !== undefined) {
+        return a + b + c;
+    }
+
+    return a + b;
 }
 
 sumOptionalParameter(10, 20);
